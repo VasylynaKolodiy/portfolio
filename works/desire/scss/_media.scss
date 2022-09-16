@@ -1,0 +1,802 @@
+@media(max-width: 2740px) {
+  .details__images{
+    transform: scale(0.8);
+  }
+}
+
+
+//________________________________________________________
+
+
+@media(max-width: 1401px) {
+  .top{
+    &__slider-img{
+      width: 450px;
+    }
+    &__slider-info{
+      max-width: 445px;
+    }
+    &__slider-title {
+      font-size: 90px;
+      line-height: 100px;
+      padding-bottom: 16px;
+      margin-bottom: 16px;
+    }
+    &__slider-text{
+      max-width: 445px;
+      padding-right: 15px;
+    }
+  }
+
+
+  .details {
+    margin-bottom: 25px;
+    &__images {
+      transform: scale(0.6) translateX(70px);
+    }
+    &__title {
+      font-size: 26px;
+      line-height: 28px;
+      padding-bottom: 15px;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+
+//________________________________________________________
+
+
+@media(max-width: 1201px) {
+  .top{
+    &__slider-title {
+      font-size: 60px;
+      line-height: 60px;
+    }
+    &__slider-text{
+      max-width: 445px;
+    }
+  }
+
+  .details {
+    &__images {
+      display: none;
+    }
+    &__container {
+      justify-content: center;
+    }
+  }
+}
+
+
+
+//________________________________________________________
+
+
+@media(max-width: 1101px) {
+  .furniture__tabs {
+    &-container {
+      grid-auto-rows: 100px;
+    }
+  }
+
+  .text{
+    margin-bottom: 30px;
+    &__title{
+      font-size: 26px;
+      line-height: 28px;
+      padding-bottom: 15px;
+      margin-bottom: 15px;
+    }
+  }
+
+  .about__popup {
+    padding: 100px 0;
+  }
+
+}
+
+
+//________________________________________________________
+
+
+@media(max-width: 951px) {
+  .top{
+    &__slider-img{
+      width: 400px;
+    }
+  }
+  .slogan{
+    margin-bottom: 39px;
+    &__title {
+      font-size: 40px;
+      line-height: 40px;
+    }
+    &__info{
+      padding-top: 72px;
+      padding-bottom: 56px;
+    }
+  }
+
+
+  .howitworks {
+    &__title {
+      font-size: 24px;
+      line-height: 26px;
+      margin-bottom: 27px;
+    }
+
+    &__img {
+      display: inline-block;
+      margin-right: 10px;
+      width: 34px;
+    }
+
+    &__subtitle {
+      font-size: 16px;
+      line-height: 23px;
+      margin-bottom: 15px;
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 20px;
+      max-width: 246px;
+    }
+  }
+
+
+
+
+  #furniture__tabs {
+    padding-inline-start: 15px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    & li {
+      height: 30px;
+    }
+    & li:not(:last-child) {
+      margin-right: 15px;
+    }
+    & li a {
+      padding: 6px 10px;
+      border-radius: 20px;
+      font-size: 14px;
+      line-height: 26px;
+    }
+  }
+
+
+  .blog__content-title {
+    font-size: 26px;
+    line-height: 28px;
+  }
+
+
+
+  .aboutus{
+    margin-bottom: 33px;
+    &__title{
+      font-size: 40px;
+      line-height: 42px;
+      padding: 55px 0 65px;
+    }
+  }
+
+
+
+  .details__progress-line {
+    width: 633px;
+  }
+
+
+  .partners{
+    margin: 0 auto 0 auto;
+    &__images{
+      width: 100px;
+      margin: 0;
+      padding: 0;
+    }
+    &__link{
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .gmap_canvas{
+    height:378px;
+  }
+
+
+  .contact__content-title {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 26px;
+  }
+  .blogsingle__newcomment-button {
+    margin-bottom: 30px;
+  }
+  .contactcollection__info-gallery{
+    margin-bottom: 30px;
+  }
+  .slick-dots {
+    margin-bottom: 30px;
+  }
+
+
+    .footer{
+    &__info {
+      max-width: 350px;
+    }
+    &__form {
+      flex-wrap: wrap;
+    }
+    &__form-button {
+      margin-top: 30px;
+    }
+  }
+}
+
+
+//________________________________________________________
+
+
+@media(max-width: 811px) {
+  .top{
+    &__slider-img{
+      width: 300px;
+    }
+    &__slider-info{
+      max-width: 345px;
+    }
+    &__slider-title {
+      font-size: 40px;
+      line-height: 40px;
+    }
+    &__slider-text{
+      max-width: 345px;
+    }
+  }
+
+
+
+  .menu__list{
+    display: none;
+  }
+  .menu.rs__menu {
+    display: block;
+  }
+  .menu__list.rs__menu-list{
+    display: block;
+  }
+  .logo{
+    margin-left: 0;
+  }
+
+
+
+
+  .collection {
+    &__info-title{
+      font-size: 24px;
+      line-height: 50px;
+      padding-bottom: 15px;
+      margin-bottom: 15px;
+    }
+    &__info-category{
+      font-size: 12px;
+      line-height: 14px;
+    }
+    &__info-subtitle {
+      font-size: 16px;
+      line-height: 18px;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+    }
+  }
+
+
+  .slogan {
+    margin-bottom: 39px;
+
+    &__title {
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
+
+
+  .howitworks{
+    &__content{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-areas:
+        "a"
+        "b"
+        "c";
+    }
+    .area1:before{
+      content: "";
+      opacity: 0;
+    }
+    .area3:before{
+      content: "";
+      opacity: 0;
+    }
+    .area2:before{
+      content: "";
+      opacity: 0;
+    }
+    &__img{
+      display: inline-block;
+      margin-right: 10px;
+      width: 34px;
+    }
+    &__subtitle{
+      font-size: 16px;
+      line-height: 23px;
+    }
+    &__text{
+      font-size: 16px;
+      line-height: 23px;
+      max-width: 100%;
+      margin-bottom: 15px;
+    }
+  }
+
+
+
+  .furniture__tabs{
+    padding: 4px 4px;
+    &-container{
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: 200px;
+      grid-gap: 20px;
+      padding: 0 15px;
+      margin-bottom: 60px;
+    }
+    &-imglink{
+      grid-row: auto;
+      grid-column: auto;
+    }
+    &-container .furniture__tabs-imglink:nth-child(10n+8){
+      grid-row: auto;
+      grid-column: auto;
+    }
+    &-container .furniture__tabs-imglink:nth-child(10n+1){
+      grid-row: auto;
+      grid-column: auto;
+    }
+  }
+  #tab5{
+    margin-right: 15px;
+  }
+
+
+
+
+  .blog__content-posts {
+    flex-direction: column;
+  }
+  .blog__post-img {
+    margin-top: 50px;
+  }
+
+  .footer{
+    &__inner {
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+    }
+    &__content{
+      padding: 60px 0 0 0;
+    }
+    &__form {
+      justify-content: start;
+    }
+    &__info {
+      max-width: 100%;
+      justify-self: flex-end;
+    }
+    &__info-text {
+      max-width: none;
+    }
+    &__form-input {
+      width: 70%;
+    }
+    &__form-button {
+      margin-top: 0;
+    }
+    &__social{
+      margin: 30px 0 0 100px;
+    }
+    &__menu{
+      margin-right: 100px;
+    }
+  }
+}
+
+
+//________________________________________________________
+
+
+@media(max-width: 762px) {
+  .furniture{
+    margin-top: 10px;
+  }
+  #furniture__tabs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & li{
+      width: content-box;
+      margin-bottom: 10px;
+    }
+    & li:last-child{
+      margin-bottom: 0;
+    }
+  }
+
+}
+
+
+//________________________________________________________
+
+
+@media(max-width: 746px) {
+  #furniture__tabs {
+   & li a {
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+
+  .about__popup {
+    padding: 75px 0;
+  }
+
+  .blogspage, .blogsingle{
+    &__container{
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+      align-items: flex-start;
+      gap: 20px;
+    }
+    &__content{
+      max-width: none;
+      width: 100%;
+    }
+    &__slidebar{
+      max-width: none;
+      width: 100%;
+    }
+  }
+
+
+}
+
+
+//________________________________________________________
+
+
+
+@media(max-width: 711px) {
+  .header__btn {
+    width: 27px;
+  }
+  .rightside-menu__close img {
+    width: 17px;
+  }
+  .menu__list-item {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .menu__list-link {
+    display: inline-block;
+    line-height: 16px;
+    font-size: 14px;
+  }
+  .rightside-menu {
+    width: 460px;
+    background-color: white;
+    padding-top: 20px;
+
+    &__close {
+      top: 25px;
+      right: 40px;
+    }
+
+    &__content {
+      max-width: 400px;
+    }
+
+    &__logo {
+      margin-bottom: 40px;
+      width: 100px;
+    }
+
+    &__title {
+      display: block;
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 31px;
+    }
+
+    &__text {
+      margin-bottom: 35px;
+    }
+
+    &__images {
+      margin-bottom: 25px;
+      width: 300px;
+    }
+  }
+  .slogan {
+    &__title {
+      font-size: 24px;
+      line-height: 22px;
+    }
+
+    &__text {
+      font-size: 14px;
+    }
+  }
+
+  .aboutus {
+    &__title {
+      font-size: 24px;
+      line-height: 26px;
+    }
+  }
+
+
+  .details {
+    &__progress-line {
+      width: 433px;
+    }
+
+    &__progress-labels {
+      font-size: 14px;
+    }
+
+    &__title {
+      font-size: 16px;
+    }
+  }
+}
+
+
+
+
+//________________________________________________________
+
+
+@media(max-width: 593px) {
+  .top{
+    &__slider-img{
+      width: 250px;
+    }
+    &__slider-info{
+      max-width: 300px;
+    }
+    &__slider-title {
+      font-size: 30px;
+      line-height: 30px;
+    }
+    &__slider-text{
+      max-width: 300px;
+      font-size: 14px;
+    }
+  }
+
+  .collection__info-title{
+    font-size: 18px;
+    line-height: 40px;
+  }
+  .collection__info-text{
+    font-size: 14px;
+  }
+
+  .slogan{
+    &__title{
+      font-size: 18px;
+      line-height: 20px;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+    }
+    &__content{
+      max-width: 430px;
+    }
+    &__text{
+      max-width: 430px;
+    }
+  }
+
+  .partners {
+    &__images {
+      width: 75px;
+    }
+  }
+
+  .furniture__tabs {
+    &-container {
+      grid-auto-rows: 150px;
+    }
+  }
+
+
+  .gmap_canvas{
+    height:278px;
+  }
+
+  .footer {
+    &__form-button{
+      margin-top: 20px;
+    }
+    &__form{
+      justify-content: center;
+    }
+  }
+}
+
+
+//________________________________________________________
+
+
+@media(max-width: 501px) {
+
+  .logo {
+    width: 70px;
+  }
+  .rightside-menu {
+    width: 300px;
+    &__close{
+      width: 20px;
+    }
+    &__content {
+      max-width: 270px;
+    }
+    &__logo {
+      margin-bottom: 40px;
+      width: 70px;
+    }
+    &__title {
+      font-size:17px;
+    }
+    &__images {
+      width: 270px;
+    }
+  }
+  .howitworks{
+    &__img{
+      width: 24px;
+    }
+    &__title{
+      font-size: 18px;
+      line-height: 20px;
+      margin-bottom: 20px;
+    }
+    &__subtitle{
+      font-size: 14px;
+      line-height: 20px;
+    }
+    &__text{
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  .collection {
+    &__info-category{
+      font-size: 10px;
+      line-height: 12px;
+    }
+    &__info-subtitle {
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+
+  .blog__post-title {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .blog__content-title {
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 0;
+  }
+
+
+  .about__popup {
+    padding: 50px 0;
+  }
+
+  .details{
+    &__pogress-line {
+      width: 270px;
+    }
+  }
+
+  .gmap_canvas{
+    height:200px;
+  }
+
+  .footer {
+    &__social{
+      margin-left: 40px;
+    }
+    &__menu{
+      margin-right: 0;
+    }
+  }
+
+}
+
+
+//________________________________________________________
+
+
+@media(max-width: 461px) {
+  .top{
+    &__slider-img{
+      width: 200px;
+    }
+    &__slider-info{
+      max-width: 200px;
+    }
+    &__slider-title {
+      font-size: 24px;
+      line-height: 22px;
+    }
+    &__slider-text{
+      max-width: 200px;
+    }
+  }
+  .details__progress-line {
+    width: 200px;
+  }
+  .details__progress-label1{
+    margin-right: 15px;
+  }
+}
+
+
+//________________________________________________________
+
+
+@media(max-width: 361px) {
+  .top{
+    &__slider-img{
+      width: 150px;
+    }
+    &__slider-title {
+      font-size: 18px;
+      line-height: 16px;
+    }
+  }
+
+  .menu__list-item {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+  .menu__list-link{
+    line-height: 14px;
+    font-size: 14px;
+  }
+  .header__btn{
+    width: 20px;
+  }
+  .footer {
+    &__social{
+      margin-left: 20px;
+    }
+  }
+}

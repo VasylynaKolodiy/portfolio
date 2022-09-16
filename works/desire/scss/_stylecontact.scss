@@ -1,0 +1,161 @@
+.breadcrumbsfon{
+  background: rgba(#DFDFDF, 0.5);
+}
+
+.breadcrumbsover{
+  position: relative;
+  z-index: 2;
+}
+
+.container__fluid{
+  margin: 0 auto;
+  max-width: 1920px;
+}
+
+.gmap_canvas{
+  height:578px;
+  width:100%;
+  transform: translateY(-64px);
+}
+
+//.gm-style .place-card-large{
+//  position: absolute;
+//  right: 0;
+//  top: 0;
+//  background-color: red;
+//}
+//.gm-style .place-card.place-card-large {
+//  position: absolute;
+//  right: 0;
+//  top: 0;
+//  background-color: red;
+//}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contact__content{
+  &-left{
+    max-width: 230px;
+  }
+  &-right{
+    max-width: 825px;
+    margin-left: auto;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  &-title{
+    @extend %title-font;
+    color: $title-color;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    font-size: 36px;
+    line-height: 60px;
+    border-bottom: 2px solid #6D7278;
+  }
+  &-social{
+    display: flex;
+    gap: 36px;
+    margin-bottom: 20px;
+  }
+  &-sociallist{
+    transition: .3s ease;
+  }
+  &-sociallist:hover{
+    transform: scale(1.2);
+  }
+  &-text{
+    margin-bottom: 16px;
+  }
+  &-address{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: #5A5A5A;
+    margin-bottom: 16px;
+  }
+  &-tel{
+    display: block;
+    color: #5A5A5A;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+  &-email{
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    color: $title-color;
+    padding-left: 30px;
+    background: url("../images/envelope.svg") left no-repeat;
+    margin-bottom: 25px;
+  }
+}
+
+
+.contactcollection{
+  max-width: 1920px;
+  margin: 0 auto;
+  &__info-gallery{
+    margin-bottom: 105px;
+    padding: 0 15px;
+  }
+  .slick-slide{
+    margin: 0 10px;
+  }
+  &__info-item{
+    position: relative;
+  }
+  &__info-link{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0.9s ease;
+    &:hover{
+      background: rgba(#ffffff, 0.5);
+    }
+  }
+  &__info-link:hover &__title {
+    opacity: 1;
+  }
+  &__title{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.9s ease;
+  }
+  &__info-subtitle{
+    @extend %title-font;
+    font-weight: 700;
+    text-align: center;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(54, 56, 56, 0.9033);
+    position: relative;
+  }
+
+
+}
+
