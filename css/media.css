@@ -1,22 +1,24 @@
-@media(max-width: 1170px) {
-
+@media (max-width: 1230px) {
     .about__title {
         font-size: 24px;
     }
-
     .about__info {
         width: 400px;
         font-size: 28px;
     }
-
-    about__photo {
+    .about__photo {
         grid-gap: 16px;
+    }
+    .hero__arrow{
+        bottom: 0;
+    }
+    .works__title {
+        margin-bottom: 50px;
     }
 }
 
 
-
-@media(max-width: 1030px) {
+@media (max-width: 1060px) {
 
     .about__title {
         font-size: 20px;
@@ -27,15 +29,28 @@
         font-size: 24px;
     }
 
-    about__photo {
+    .about__photo {
         grid-gap: 12px;
     }
 }
 
-@media(max-width: 980px) {
+@media (max-width: 1010px) {
+
+    .client__list-item{
+        font-size: 18px;
+    }
+    .hero__photo img{
+        width: 250px;
+        height: 250px;
+    }
+
     .hero__title {
         font-size: 36px;
     }
+    .hero__subtitle{
+        font-size: 22px;
+    }
+
 
     .client__title {
         font-size: 32px;
@@ -46,40 +61,42 @@
     .client__body {
         margin-top: 45px;
         gap: 10px;
-        justify-content: flex-end;
     }
 
-    .client__item{
+    .client__item {
         width: 48%;
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
-    .works__body{
+    .works__body {
         margin-bottom: 80px;
     }
 
-    .works__title{
-       text-align: center;
+    .works__title {
+        text-align: center;
         margin-bottom: 15px;
     }
 
     .works__card {
         flex-wrap: wrap;
         justify-content: center;
+        margin-bottom: 80px;
+        gap: 20px;
     }
 
-    .card__img{
-        width: 80%;
+    .card__img {
+        width: 50%;
+        height: 600px;
     }
 
-    .card__img img{
+    .card__img img {
         width: 100%;
-        height: auto;
+        height: 600px;
     }
 
-    .card__info{
+    .card__info {
         width: 100%;
     }
 
@@ -91,7 +108,7 @@
         display: inline-block;
     }
 
-    .card__category{
+    .card__category {
         margin-bottom: 10px;
     }
 
@@ -104,11 +121,14 @@
         margin-bottom: 88px;
     }
 
-    .about__title{
+    .about__title {
         text-align: center;
     }
+    .about__photo img {
+        max-width: 30%;
+    }
 
-    .about__info{
+    .about__info {
         width: 100%;
         text-align: center;
         margin-bottom: 40px;
@@ -121,14 +141,45 @@
         gap: 10px;
         flex-wrap: wrap;
     }
+    .card__text{
+        font-size: 24px;
+    }
+
+    .footer__title{
+        font-size: 40px;
+    }
 }
 
-@media(max-width: 768px) {
-    .burger{
+@media (max-width: 850px) {
+    .hero__photo img{
+        width: 200px;
+        height: 200px;
+    }
+    .hero__subtitle{
+
+        font-size: 22px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .about__photo img {
+        max-width: 50%;
+    }
+    .client__body{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    .client__item {
+        width: 30%;
+    }
+    .burger {
         display: block;
     }
 
-    .menu__list{
+    .menu__list {
         position: absolute;
         top: 0;
         left: 0;
@@ -142,10 +193,10 @@
     }
 
     .menu__item:not(:last-child) {
-         margin-right: 0;
+        margin-right: 0;
     }
 
-    .menu__link{
+    .menu__link {
         font-weight: 900;
         font-size: 30px;
         line-height: 200%;
@@ -153,43 +204,67 @@
         margin-right: 0;
         margin-left: 0;
     }
+
+    .card__img {
+        height: 600px;
+    }
+
+    .card__img img {
+        height: 600px;
+    }
 }
 
 
-@media(max-width: 630px) {
+@media (max-width: 700px) {
 
-    .card__img{
-        width: 60%;
-    }
-
-    .card__img img{
-        width: 100%;
-        height: auto;
-    }
-
-    .card__info{
-        width: 100%;
-    }
-
-    .client__item{
-        width: 100%;
-        display: flex;
+    .client__lists{
+        flex-direction: column;
         align-items: center;
-        justify-content: center;
+        gap: 10px;
+    }
+    .client__list{
+        width: 80%;
     }
 
-    .client__item img{
-        width: 40%;
+    .card__info {
+        width: 100%;
     }
 
-    .about__photo img{
-        width: 60%;
-    }
 
     .footer__social {
         gap: 12px;
         margin-bottom: 26px;
     }
+
+    /*.about__photo img{*/
+    /*    width: 30%;*/
+    /*    height: auto;*/
+    /*}*/
+
+    .card__img {
+        height: 400px;
+    }
+
+    .card__img img {
+        height: 400px;
+    }
+
 }
 
+@media (max-width: 600px) {
+    .hero__arrow{
+        bottom: -20px;
+    }
+    .card__img {
+        height: 350px;
+    }
+
+    .card__img img {
+        height: 350px;
+    }
+    .card__text{
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
 

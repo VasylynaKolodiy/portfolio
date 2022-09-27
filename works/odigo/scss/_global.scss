@@ -1,0 +1,35 @@
+html,
+body {
+	font-family: 'Lato', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	height: 100%;
+	color: #102746;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.main {
+	flex: 1 0 auto;
+}
+
+.footer {
+	flex: 0 0 auto;
+}
+
+.container{
+  max-width: 1292px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+
+
+
+
