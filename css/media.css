@@ -10,7 +10,7 @@
         grid-gap: 16px;
     }
     .hero__arrow{
-        bottom: 0;
+        bottom: 10px;
     }
     .works__title {
         margin-bottom: 50px;
@@ -252,9 +252,7 @@
 }
 
 @media (max-width: 600px) {
-    .hero__arrow{
-        bottom: -20px;
-    }
+
     .card__img {
         height: 350px;
     }

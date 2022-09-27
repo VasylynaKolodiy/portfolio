@@ -60,6 +60,19 @@ p {
     width: 150px;
 }
 
+.header__logo-img:hover {
+    border: 3px solid goldenrod;
+}
+
+.header__logo svg path{
+    transition: .3s ease;
+}
+
+.header__logo svg:hover path{
+    fill: goldenrod;
+    border: 3px solid goldenrod;
+}
+
 .container {
     max-width: 1245px;
     margin: 0 auto;
@@ -118,7 +131,7 @@ p {
     content: "";
     position: absolute;
     bottom: -5px;
-    left: 50%;
+    left: 0;
     width: 0;
     height: 2px;
     transform: translateX(-50%);
@@ -211,6 +224,7 @@ p {
 .header__logo-img {
     border: 3px solid gainsboro;
     border-radius: 100%;
+    transition: .3s ease;
 }
 
 .hero__arrow {
@@ -370,7 +384,7 @@ p {
 
 
 .card__category {
-    display: inline-block;
+    display: block;
     font-weight: 600;
     font-size: 18px;
     line-height: 150%;
