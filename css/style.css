@@ -11,10 +11,7 @@ body {
     font-family: 'Work+Sans', sans-serif;
     font-weight: 400;
     color: rgba(227, 228, 230, 1);
-
     background: black;
-    /*background: #5a5a5a url("../img/works/theme.png") top center no-repeat fixed;*/
-    /*background-size: cover ;*/
 }
 
 html {
@@ -27,6 +24,12 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
     margin: 0 0 5px;
+}
+
+.hero{
+    margin-bottom: 80px;
+    background-image: url("../img/bg.png");
+    background-attachment: fixed;
 }
 
 .hero__info {
@@ -52,8 +55,12 @@ p {
     right: 0;
     z-index: 2;
     /*background: #5a5a5a;*/
-    background: black;
+    background: transparent;
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+    transition: .3s;
+}
+.header.fixed{
+    background: black;
 }
 
 .header__logo img {
@@ -116,7 +123,7 @@ p {
 .menu__link {
     display: inline-block;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 200%;
     text-transform: uppercase;
     font-feature-settings: 'liga' off;
@@ -198,12 +205,12 @@ p {
 }
 
 .hero {
-    height: 100vh;
+    height: 95vh;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    min-height: 300px;
+    min-height: 450px;
 }
 
 .hero__title {
@@ -219,6 +226,7 @@ p {
     text-align: center;
     padding: 20px;
     font-size: 32px;
+    color: rgba(227, 228, 230, 0.5);
 }
 
 .header__logo-img {
@@ -240,7 +248,7 @@ p {
 }
 
 .client {
-    padding: 50px 0 130px;
+    margin-bottom: 80px;
 }
 
 .client .container {
@@ -252,12 +260,12 @@ p {
 
 .client__title {
     font-weight: 600;
-    font-size: 40px;
+    font-size: 56px;
     line-height: 150%;
     color: rgba(227, 228, 230, 1);
-    max-width: 520px;
+    /*max-width: 520px;*/
     align-self: flex-start;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .client__client {
@@ -276,18 +284,11 @@ p {
     align-items: center;
     justify-content: space-between;
     gap: 50px;
-    margin-top: 60px;
 }
 
 .client__list {
     list-style: none;
     width: 48%;
-}
-
-.client__list-item {
-    font-size: 22px;
-    border-bottom: 1px solid rgba(227, 228, 230, 0.55);;
-    padding: 10px 0;
 }
 
 .client__item {
@@ -312,21 +313,15 @@ p {
 }
 
 .works {
-    padding-top: 50px;
+    margin-bottom: 80px;
 }
 
 .works__title {
-    font-weight: 300;
-    font-size: 40px;
+    font-weight: 600;
+    font-size: 56px;
     line-height: 150%;
     color: rgba(227, 228, 230, 1);
-    margin-bottom: 97px;
-}
-
-
-
-.works__body {
-    margin-bottom: 220px;
+    margin-bottom: 40px;
 }
 
 .works__card {
@@ -343,6 +338,11 @@ p {
     height: 600px;
     border-radius: 20px;
     border: 3px solid gainsboro;
+    overflow: hidden;
+}
+
+.card__img img:hover{
+    transform: scale(1.1);
 }
 
 .card__img img {
@@ -353,11 +353,12 @@ p {
     width: 100%;
     height: 100%;
     object-position: top;
+    transition: .3s ease;
 }
 
 .card__tag {
     font-weight: 600;
-    font-size: 24px;
+    font-size: 32px;
     line-height: 170%;
     letter-spacing: 0.04em;
     text-transform: uppercase;
@@ -378,22 +379,33 @@ p {
 
 .card__text {
     font-weight: 600;
+    color: rgba(227, 228, 230, 1);
+    padding: 10px 0;
+}
+.card__standarttext {
+    font-weight: 600;
     color: rgba(227, 228, 230, 0.5);
     padding: 10px 0;
+}
+
+.card__cat{
+    color: green;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+}
+.card__cat--noresponsive{
+    text-decoration: line-through;
 }
 
 
 .card__category {
     display: block;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 150%;
     color: goldenrod;
     margin-bottom: 40px;
-    /*background-color: #5a5a5a;*/
-    /*padding: 10px 30px;*/
-    /*border-radius: 20px;*/
-
 }
 
 .card__button {
@@ -454,12 +466,11 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 188px;
 }
 
 .about__title {
     font-weight: 600;
-    font-size: 24px;
+    font-size: 32px;
     line-height: 150%;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -480,6 +491,10 @@ p {
     grid-row: span 2;
 }
 
+.about{
+    margin-bottom: 80px;
+}
+
 .about__photo img {
     border: 3px solid gainsboro;
     border-radius: 20px;
@@ -492,7 +507,7 @@ p {
     font-weight: 300;
     font-size: 32px;
     line-height: 150%;
-    color: rgba(227, 228, 230, 1);
+    color: rgba(227, 228, 230, .5);
 }
 
 .about__info span {
@@ -502,7 +517,7 @@ p {
 
 .footer__title {
     font-weight: 300;
-    font-size: 40px;
+    font-size: 56px;
     line-height: 150%;
     text-align: center;
     letter-spacing: -0.02em;
@@ -510,26 +525,17 @@ p {
 }
 
 
-.footer__info {
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 150%;
-    text-align: center;
-    color: #E3E4E6;
-    margin-bottom: 72px;
-}
-
 .footer__social {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 72px;
-    margin-bottom: 96px;
+    margin-bottom: 40px;
 }
 
 .footer__copyright {
     font-weight: 300;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 150%;
     text-align: center;
     color: rgba(227, 228, 230, 1);
