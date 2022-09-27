@@ -29,13 +29,14 @@ p {
     margin: 0 0 5px;
 }
 
-.hero__info{
+.hero__info {
     display: flex;
     align-items: center;
     margin-top: 100px;
     gap: 30px;
 }
-.hero__photo img{
+
+.hero__photo img {
     width: 300px;
     height: 300px;
     border-radius: 50px;
@@ -55,7 +56,7 @@ p {
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
 }
 
-.header__logo img{
+.header__logo img {
     width: 150px;
 }
 
@@ -74,7 +75,7 @@ p {
     align-content: center;
 }
 
-.header__menu{
+.header__menu {
     display: flex;
 }
 
@@ -110,7 +111,9 @@ p {
     text-decoration: none;
     transition: .3s ease;
 }
-
+.menu__link:hover{
+    color: goldenrod;
+}
 .menu__link:after {
     content: "";
     position: absolute;
@@ -122,6 +125,7 @@ p {
     background: #E3E4E6;
     transition: .3s linear;
 }
+
 .menu__link:hover:after {
     content: "";
     position: absolute;
@@ -130,7 +134,7 @@ p {
     width: 40px;
     height: 2px;
     transform: translateX(-50%);
-    background: #E3E4E6;
+    background: goldenrod;
 }
 
 
@@ -198,12 +202,13 @@ p {
     color: rgba(227, 228, 230, 1);
 }
 
-.hero__subtitle{
+.hero__subtitle {
     text-align: center;
     padding: 20px;
     font-size: 32px;
 }
-.header__logo-img{
+
+.header__logo-img {
     border: 3px solid gainsboro;
     border-radius: 100%;
 }
@@ -241,13 +246,13 @@ p {
     margin-bottom: 30px;
 }
 
-.client__client{
+.client__client {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.client__lists{
+.client__lists {
     display: flex;
     gap: 50px;
 }
@@ -260,17 +265,18 @@ p {
     margin-top: 60px;
 }
 
-.client__list{
+.client__list {
     list-style: none;
     width: 48%;
 }
-.client__list-item{
+
+.client__list-item {
     font-size: 22px;
     border-bottom: 1px solid rgba(227, 228, 230, 0.55);;
     padding: 10px 0;
 }
 
-.client__item{
+.client__item {
     width: 100px;
     height: 90px;
     padding: 5px;
@@ -280,7 +286,8 @@ p {
     flex-wrap: wrap;
 
 }
-.client__item img{
+
+.client__item img {
     width: auto;
     height: 100%;
     object-fit: cover;
@@ -290,9 +297,10 @@ p {
     scroll-margin-top: 100px;
 }
 
-.works{
+.works {
     padding-top: 50px;
 }
+
 .works__title {
     font-weight: 300;
     font-size: 40px;
@@ -301,10 +309,7 @@ p {
     margin-bottom: 97px;
 }
 
-.works__title span {
-    font-weight: 600;
-    color: rgba(227, 228, 230, 1);
-}
+
 
 .works__body {
     margin-bottom: 220px;
@@ -338,8 +343,8 @@ p {
 
 .card__tag {
     font-weight: 600;
-    font-size: 16px;
-    line-height: 150%;
+    font-size: 24px;
+    line-height: 170%;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #E3E4E6;
@@ -347,31 +352,34 @@ p {
 }
 
 .card__info {
-    font-weight: 300;
+    font-weight: 600;
     font-size: 32px;
     line-height: 150%;
-    color: rgba(227, 228, 230,1);
+    color: rgba(227, 228, 230, 1);
     align-self: center;
     width: 100%;
 }
 
-.card__info span {
-    font-weight: 600;
-    color: rgba(227, 228, 230, 1);
-}
+
 
 .card__text {
     font-weight: 600;
-    color: rgba(227, 228, 230, 1);
+    color: rgba(227, 228, 230, 0.5);
+    padding: 10px 0;
 }
 
 
 .card__category {
-    font-weight: 300;
+    display: inline-block;
+    font-weight: 600;
     font-size: 18px;
     line-height: 150%;
-    color: #E3E4E6;
+    color: goldenrod;
     margin-bottom: 40px;
+    /*background-color: #5a5a5a;*/
+    /*padding: 10px 30px;*/
+    /*border-radius: 20px;*/
+
 }
 
 .card__button {
@@ -457,6 +465,7 @@ p {
     grid-column: span 1;
     grid-row: span 2;
 }
+
 .about__photo img {
     border: 3px solid gainsboro;
     border-radius: 20px;
@@ -479,13 +488,12 @@ p {
 
 .footer__title {
     font-weight: 300;
-    font-size: 56px;
+    font-size: 40px;
     line-height: 150%;
     text-align: center;
     letter-spacing: -0.02em;
     color: rgba(227, 228, 230, 1);
 }
-
 
 
 .footer__info {
@@ -510,7 +518,7 @@ p {
     font-size: 18px;
     line-height: 150%;
     text-align: center;
-    color: rgba(227, 228, 230,1);
+    color: rgba(227, 228, 230, 1);
     margin-bottom: 45px;
 }
 
@@ -526,16 +534,19 @@ p {
     transition: 0.3s ease-in;
 }
 
-.social__img:hover {
-    padding: 0;
-}
 
-.social__img path {
-    transition: 0.3s ease-in;
+
+.social__img path, .social__img-polygon {
+    transition: 0.3s linear;
 }
 
 .social__img:hover path {
-    fill-opacity: 1;
+    fill: goldenrod;
+
+}
+
+.social__img:hover .social__img-polygon {
+    fill: goldenrod;
 }
 
 
