@@ -20,3 +20,13 @@ window.addEventListener("scroll", () => {
   window.scrollY > 0 ? header.classList.add('fixed') : header.classList.remove('fixed');
 })
 
+function openTechnology(worksTechnology) {
+  let i;
+  let x = document.getElementsByClassName("works__tabs-inner");
+  let btn = document.getElementsByClassName('works__tabs-button')
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+    btn[i].classList.toggle("active");
+  }
+  document.getElementById(worksTechnology).style.display = "block";
+}

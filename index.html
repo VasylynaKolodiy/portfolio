@@ -16,12 +16,18 @@
 
 <div class="page">
 
-  <header class="header">
-    <div class="container header__container">
+  <header class="header container">
+    <div class=" header__container">
       <a href="#" class="header__logo">
         <svg class="header__logo-img" height="52" viewBox="0 0 32 32" width="52"
-             xmlns="http://www.w3.org/2000/svg"><g fill="#E3E4E6" fill-opacity="0"><circle cx="16" cy="16" fill="#E3E4E6"  r="16"/>
-          <path d="M16.02 16.945v7.993l5.947-1.602 1.397-15.39H16.02v6.532l.304-.947h.796zm-7.384 7.524L7 6.5h18l-1.636 17.969L15.98 26.5zm5.163-6.793v-.741l-2.469-.984 2.47-.99v-.742l-3.527 1.433v.592zm7.933-1.432l-3.527 1.432v-.741l2.47-.987-2.47-.987v-.742l3.527 1.433zm-5.712.7v-2.466l-1.317 4.107h.788z" fill="#FFFFFF" fill-opacity="0.55" fill-rule="nonzero"/></g></svg>
+             xmlns="http://www.w3.org/2000/svg">
+          <g fill="#E3E4E6" fill-opacity="0">
+            <circle cx="16" cy="16" fill="#E3E4E6" r="16"/>
+            <path
+              d="M16.02 16.945v7.993l5.947-1.602 1.397-15.39H16.02v6.532l.304-.947h.796zm-7.384 7.524L7 6.5h18l-1.636 17.969L15.98 26.5zm5.163-6.793v-.741l-2.469-.984 2.47-.99v-.742l-3.527 1.433v.592zm7.933-1.432l-3.527 1.432v-.741l2.47-.987-2.47-.987v-.742l3.527 1.433zm-5.712.7v-2.466l-1.317 4.107h.788z"
+              fill="#FFFFFF" fill-opacity="0.55" fill-rule="nonzero"/>
+          </g>
+        </svg>
 
 
       </a>
@@ -111,202 +117,217 @@
       </h1>
 
       <div class="works__body">
+        <div class="works__tabs">
+          <button class="works__tabs-button React active" onclick=openTechnology('React')>
+            REACT works
+          </button>
+          <button class="works__tabs-button NoReact" onclick=openTechnology('NoReact')>Other works</button>
+        </div>
 
-        <!--________________________________________-->
+        <div id="React" class="works__tabs-inner">
+
+          <!--________________________________________-->
 
 
-        <div class="works__card card">
-          <a class="card__img" href="https://star-wars-42427.firebaseapp.com/" target="_blank">
-            <img src="img/works/work8.jpg" alt="Star Wars">
-          </a>
+          <div class="works__card card">
+            <a class="card__img" href="https://star-wars-42427.firebaseapp.com/" target="_blank">
+              <img src="img/works/work8.jpg" alt="Star Wars">
+            </a>
 
-          <div class="card__info font-regular">
-            <span class="card__tag font-regular">Star Wars</span>
-            <div class="card__standarttext">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            <div class="card__info font-regular">
+              <span class="card__tag font-regular">Star Wars</span>
+              <div class="card__standarttext">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              </div>
+              <div class="card__text">Multi pages site</div>
+              <div class="card__cat font-small">Responsive</div>
+              <div class="card__category font-small">HTML, CSS, JS, React</div>
+              <a href="https://star-wars-42427.firebaseapp.com/" target="_blank" class="card__button font-small">View
+                work</a>
             </div>
-            <div class="card__text">Multi pages site</div>
-            <div class="card__cat font-small">Responsive</div>
-            <div class="card__category font-small">HTML, CSS, JS, React</div>
-            <a href="https://star-wars-42427.firebaseapp.com/" target="_blank" class="card__button font-small">View work</a>
+          </div>
+
+          <!--________________________________________-->
+
+
+          <div class="works__card card">
+            <a class="card__img" href="https://countries-9801a.web.app/" target="_blank">
+              <img src="img/works/work9.jpg" alt="Countries">
+            </a>
+
+            <div class="card__info font-regular">
+              <span class="card__tag font-regular">Countries</span>
+              <div class="card__standarttext">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              </div>
+              <div class="card__text">Multi pages site</div>
+              <div class="card__cat font-small">Responsive</div>
+              <div class="card__category font-small">HTML, CSS, JS, React</div>
+              <a href="https://countries-9801a.web.app/" target="_blank" class="card__button font-small">View work</a>
+            </div>
+          </div>
+
+
+          <!--_______________________________________-->
+
+
+          <div class="works__card card">
+            <a class="card__img" href="https://cinema-d8307.web.app/" target="_blank">
+              <img src="img/works/work10.png" alt="Cinema">
+            </a>
+
+            <div class="card__info font-regular">
+              <span class="card__tag font-regular">Cinema</span>
+              <div class="card__standarttext">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              </div>
+              <div class="card__text">Multi pages site</div>
+              <div class="card__cat font-small">Responsive</div>
+              <div class="card__category font-small">HTML, CSS, JS, React</div>
+              <a href="https://cinema-d8307.web.app/" target="_blank" class="card__button font-small">View work</a>
+            </div>
+          </div>
+
+          <!--________________________________________-->
+
+
+          <div class="works__card card">
+            <a class="card__img" href="https://createx-33bcd.web.app" target="_blank">
+              <img src="img/works/work5.jpg" alt="Createx Construction">
+            </a>
+
+            <div class="card__info font-regular">
+              <span class="card__tag font-regular">Createx Construction</span>
+              <div class="card__standarttext">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              </div>
+              <div class="card__text">Multi pages site</div>
+              <div class="card__cat card__cat--noresponsive font-small">Responsive</div>
+              <div class="card__category font-small">HTML, CSS, JS, React</div>
+              <a href="https://createx-33bcd.web.app" target="_blank" class="card__button font-small">View work</a>
+            </div>
+          </div>
+
+          <!--________________________________________-->
+          <div class="works__card card">
+            <a class="card__img" href="https://todo-ee6f6.web.app" target="_blank">
+              <img src="img/works/work6.jpg" alt="Todo list">
+            </a>
+
+            <div class="card__info font-regular">
+              <span class="card__tag font-regular">Todo list</span>
+              <div class="card__standarttext">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              </div>
+              <div class="card__text">Landing page</div>
+              <div class="card__cat card__cat--noresponsive font-small">Responsive</div>
+              <div class="card__category font-small">HTML, JS, React, React hooks</div>
+              <a href="https://createx-33bcd.web.app" target="_blank" class="card__button font-small">View work</a>
+            </div>
           </div>
         </div>
 
-        <!--________________________________________-->
+
+        <!-- NO REACT NO REACT NO REACT NO REACT NO REACT NO REACT NO REACT NO REACT-->
+        <div id="NoReact" class="works__tabs-inner" style="display:none">
+          <!--________________________________________-->
 
 
-        <div class="works__card card">
-          <a class="card__img" href="https://countries-9801a.web.app/" target="_blank">
-            <img src="img/works/work9.jpg" alt="Countries">
-          </a>
+          <div class="works__card card">
+            <a class="card__img" href="https://velisssa.github.io/refugee/" target="_blank">
+              <img src="img/works/work7.jpg" alt="Refugee">
+            </a>
 
-          <div class="card__info font-regular">
-            <span class="card__tag font-regular">Countries</span>
-            <div class="card__standarttext">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            <div class="card__info font-regular">
+              <span class="card__tag font-regular">Refugee</span>
+              <div class="card__standarttext">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              </div>
+              <div class="card__text">Landing page</div>
+              <div class="card__cat font-small">Responsive</div>
+              <div class="card__category font-small">HTML, CSS, JS</div>
+              <a href="https://velisssa.github.io/refugee/" target="_blank" class="card__button font-small">View work</a>
             </div>
-            <div class="card__text">Multi pages site</div>
-            <div class="card__cat font-small">Responsive</div>
-            <div class="card__category font-small">HTML, CSS, JS, React</div>
-            <a href="https://countries-9801a.web.app/" target="_blank" class="card__button font-small">View work</a>
+          </div>
+
+          <!--________________________________________-->
+
+
+          <div class="works__card card">
+            <a class="card__img" href="works/odigo/index.html" target="_blank">
+              <img src="img/works/work4.jpg" alt="Odigo">
+            </a>
+
+            <div class="card__info font-regular">
+              <span class="card__tag font-regular">Odigo</span>
+              <div class="card__standarttext">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              </div>
+              <div class="card__text">Landing page</div>
+              <div class="card__cat font-small">Responsive</div>
+              <div class="card__category font-small">HTML, CSS, JS</div>
+              <a href="works/odigo/index.html" target="_blank" class="card__button font-small">View work</a>
+            </div>
+          </div>
+
+          <!--________________________________________-->
+
+          <div class="works__card card">
+            <a class="card__img" href="works/desire/index.html" target="_blank">
+              <img src="img/works/work3.jpg" alt="Desire">
+            </a>
+
+            <div class="card__info font-regular">
+              <span class="card__tag font-regular">Desire</span>
+              <div class="card__standarttext">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              </div>
+              <div class="card__text">Multi pages site</div>
+              <div class="card__cat font-small">Responsive</div>
+              <div class="card__category font-small">HTML, CSS, JS, Gulp</div>
+              <a href="works/desire/index.html" target="_blank" class="card__button font-small">View work</a>
+            </div>
+          </div>
+
+          <!--________________________________________-->
+
+          <div class="works__card card">
+            <a class="card__img" href="works/webovio/index.html" target="_blank">
+              <img src="img/works/work2.jpg" alt="Webovio">
+            </a>
+
+            <div class="card__info font-regular">
+              <span class="card__tag font-regular">Webovio</span>
+              <div class="card__standarttext">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              </div>
+              <div class="card__text">Landing page</div>
+              <div class="card__cat font-small">Responsive</div>
+              <div class="card__category font-small">HTML, CSS, JS</div>
+              <a href="works/webovio/index.html" target="_blank" class="card__button font-small">View work</a>
+            </div>
+          </div>
+
+          <!--________________________________________-->
+
+          <div class="works__card card">
+            <a class="card__img" href="works/carRepair/index.html" target="_blank">
+              <img src="img/works/work1.jpg" alt="Cars">
+            </a>
+
+            <div class="card__info font-regular">
+              <span class="card__tag font-regular">Cars</span>
+              <div class="card__standarttext">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              </div>
+              <div class="card__text">Landing page</div>
+              <div class="card__cat font-small">Responsive</div>
+              <div class="card__category font-small">HTML, CSS, JS</div>
+              <a href="works/carRepair/index.html" target="_blank" class="card__button font-small">View work</a>
+            </div>
           </div>
         </div>
 
-
-        <!--_______________________________________-->
-
-
-        <div class="works__card card">
-          <a class="card__img" href="https://cinema-d8307.web.app/" target="_blank">
-            <img src="img/works/work10.png" alt="Cinema">
-          </a>
-
-          <div class="card__info font-regular">
-            <span class="card__tag font-regular">Cinema</span>
-            <div class="card__standarttext">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            </div>
-            <div class="card__text">Multi pages site</div>
-            <div class="card__cat font-small">Responsive</div>
-            <div class="card__category font-small">HTML, CSS, JS, React</div>
-            <a href="https://cinema-d8307.web.app/" target="_blank" class="card__button font-small">View work</a>
-          </div>
-        </div>
-
-        <!--________________________________________-->
-
-
-        <div class="works__card card">
-          <a class="card__img" href="https://createx-33bcd.web.app" target="_blank">
-            <img src="img/works/work5.jpg" alt="Createx Construction">
-          </a>
-
-          <div class="card__info font-regular">
-            <span class="card__tag font-regular">Createx Construction</span>
-            <div class="card__standarttext">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            </div>
-            <div class="card__text">Multi pages site</div>
-            <div class="card__cat card__cat--noresponsive font-small">Responsive</div>
-            <div class="card__category font-small">HTML, CSS, JS, React</div>
-            <a href="https://createx-33bcd.web.app" target="_blank" class="card__button font-small">View work</a>
-          </div>
-        </div>
-
-        <!--________________________________________-->
-
-
-        <div class="works__card card">
-          <a class="card__img" href="https://velisssa.github.io/refugee/" target="_blank">
-            <img src="img/works/work7.jpg" alt="Refugee">
-          </a>
-
-          <div class="card__info font-regular">
-            <span class="card__tag font-regular">Refugee</span>
-            <div class="card__standarttext">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            </div>
-            <div class="card__text">Landing page</div>
-            <div class="card__cat font-small">Responsive</div>
-            <div class="card__category font-small">HTML, CSS, JS</div>
-            <a href="https://velisssa.github.io/refugee/" target="_blank" class="card__button font-small">View work</a>
-          </div>
-        </div>
-
-        <!--________________________________________-->
-        <div class="works__card card">
-          <a class="card__img" href="https://todo-ee6f6.web.app" target="_blank">
-            <img src="img/works/work6.jpg" alt="Todo list">
-          </a>
-
-          <div class="card__info font-regular">
-            <span class="card__tag font-regular">Todo list</span>
-            <div class="card__standarttext">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            </div>
-            <div class="card__text">Landing page</div>
-            <div class="card__cat card__cat--noresponsive font-small">Responsive</div>
-            <div class="card__category font-small">HTML, JS, React, React hooks</div>
-            <a href="https://createx-33bcd.web.app" target="_blank" class="card__button font-small">View work</a>
-          </div>
-        </div>
-
-        <!--________________________________________-->
-
-
-        <div class="works__card card">
-          <a class="card__img" href="works/odigo/index.html" target="_blank">
-            <img src="img/works/work4.jpg" alt="Odigo">
-          </a>
-
-          <div class="card__info font-regular">
-            <span class="card__tag font-regular">Odigo</span>
-            <div class="card__standarttext">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            </div>
-            <div class="card__text">Landing page</div>
-            <div class="card__cat font-small">Responsive</div>
-            <div class="card__category font-small">HTML, CSS, JS</div>
-            <a href="works/odigo/index.html" target="_blank" class="card__button font-small">View work</a>
-          </div>
-        </div>
-
-        <!--________________________________________-->
-
-        <div class="works__card card">
-          <a class="card__img" href="works/desire/index.html" target="_blank" >
-            <img src="img/works/work3.jpg" alt="Desire">
-          </a>
-
-          <div class="card__info font-regular">
-            <span class="card__tag font-regular">Desire</span>
-            <div class="card__standarttext">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            </div>
-            <div class="card__text">Multi pages site</div>
-            <div class="card__cat font-small">Responsive</div>
-            <div class="card__category font-small">HTML, CSS, JS, Gulp</div>
-            <a href="works/desire/index.html" target="_blank" class="card__button font-small">View work</a>
-          </div>
-        </div>
-
-        <!--________________________________________-->
-
-        <div class="works__card card">
-          <a class="card__img" href="works/webovio/index.html" target="_blank" >
-            <img src="img/works/work2.jpg" alt="Webovio">
-          </a>
-
-          <div class="card__info font-regular">
-            <span class="card__tag font-regular">Webovio</span>
-            <div class="card__standarttext">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            </div>
-            <div class="card__text">Landing page</div>
-            <div class="card__cat font-small">Responsive</div>
-            <div class="card__category font-small">HTML, CSS, JS</div>
-            <a href="works/webovio/index.html" target="_blank" class="card__button font-small">View work</a>
-          </div>
-        </div>
-
-        <!--________________________________________-->
-
-        <div class="works__card card">
-          <a class="card__img" href="works/carRepair/index.html" target="_blank" >
-            <img src="img/works/work1.jpg" alt="Cars">
-          </a>
-
-          <div class="card__info font-regular">
-            <span class="card__tag font-regular">Cars</span>
-            <div class="card__standarttext">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            </div>
-            <div class="card__text">Landing page</div>
-            <div class="card__cat font-small">Responsive</div>
-            <div class="card__category font-small">HTML, CSS, JS</div>
-            <a href="works/carRepair/index.html" target="_blank" class="card__button font-small">View work</a>
-          </div>
-        </div>
       </div> <!--    works__body-->
     </div> <!--  container-->
   </section>
@@ -329,14 +350,14 @@
     </div> <!--  container-->
   </section>
 
-
   <footer class="footer" id="footer">
     <div class="container footer-container">
       <h2 class="footer__title font-big">Get in Touch</h2>
 
       <div class="footer__social">
         <a href="mailto: vasylyna.tybinka@gmail.com" class="social_link">
-          <svg class="social__img" width="40" height="40" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          <svg class="social__img" width="40" height="40" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+               xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                viewBox="0 0 330.001 330.001" style="enable-background:new 0 0 330.001 330.001;" xml:space="preserve">
 <g id="XMLID_348_">
 	<path id="XMLID_350_" d="M173.871,177.097c-2.641,1.936-5.756,2.903-8.87,2.903c-3.116,0-6.23-0.967-8.871-2.903L30,84.602
@@ -383,9 +404,6 @@
 
 </body>
 </html>
-
-
-
 
 
 
