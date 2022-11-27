@@ -53,14 +53,15 @@ p {
     top: 0;
     left: 0;
     right: 0;
-    background: url("../img/bg.png");
+    background: transparent;
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
     transition: .3s;
     z-index: 50;
+
 }
 
 .header.fixed {
-    background: url("../img/bg.png");
+    background: black;
 }
 
 .header__logo img {

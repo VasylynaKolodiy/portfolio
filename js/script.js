@@ -26,7 +26,8 @@ function openTechnology(worksTechnology) {
   let btn = document.getElementsByClassName('works__tabs-button')
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
-    btn[i].classList.toggle("active");
+    btn[i].classList.remove("active");
   }
+  document.getElementsByClassName(worksTechnology)[0].classList.add('active')
   document.getElementById(worksTechnology).style.display = "block";
 }
